@@ -33,7 +33,7 @@ body{
     
 }
 .navigation h2{
-    font-size: 2vw;
+    font-size: 1.7rem;
     font-weight: 500;
     color: rgb(110, 212, 8);
 }
@@ -44,8 +44,9 @@ body{
 .navigation .nav ul a{
     text-decoration: none;
     color: rgb(79, 148, 10);
-    margin: 0 1rem;
+    margin: 0 0.7rem;
     position: relative;
+    font-size: 1rem;
 }
 .navigation .nav ul a::after{
     content: "";
@@ -67,7 +68,7 @@ body{
     text-decoration: none;
     color: rgb(110, 212, 8);
     margin: 0 0.3rem;
-    font-size: 2vw;
+    font-size: 1.7rem;
 }
 
 /*hover effects*/
@@ -90,7 +91,7 @@ body{
     height: 40vw;
 }
 .home .div-home h1{
-    font-size: 4.5rem;
+    font-size: 3.5rem;
     color: rgb(193, 224, 251);
 }
 .div-home h3{
@@ -112,12 +113,10 @@ body{
 .home img{
     max-width: 400px;
     border-radius: 40%;
-    margin-bottom: 3rem;
-
 }
 .about{
     background-color: rgb(20, 20, 20);
-    height: 85vh ;
+    height: min(95vh, 700px) ;
     display: flex;
     align-items: center;
 }
