@@ -14,7 +14,7 @@ body{
     color: rgb(79, 148, 10);
 }
 .container{
-    max-width: min(100%, 1200px);
+    max-width: min(96%, 1200px);
     margin: 0 auto;
 }
 .navigation{
@@ -139,4 +139,78 @@ body{
     color: rgb(233, 245, 255);
     font-weight: 250;
     font-size: 1.2rem;
+}
+
+
+
+@media screen and (max-width: 365px){
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html, body{
+        overflow-x: hidden;
+    }
+
+    .container{
+        width: 100%;
+        padding: 0;
+    }
+    .navigation{
+        width: 100%;
+        padding: 1rem 0 0;
+        background-color: rgb(13, 13, 13);
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .navigation .nav,
+    .navigation .socials{
+        display: none;
+    }
+    .navigation h2{
+        font-size: 1.5rem;
+        left: 0;
+    }
+    .home{
+        padding-bottom: 12rem;
+        min-height: 100dvh;
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 2.5rem;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .home img{
+        max-width: 90vw;
+    }
+    .div-home h2{
+        font-size: 1rem;
+    }
+    .about{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        height: 100dvh;
+    }
+    .about img{
+        max-width: 80vw;
+    }
+    .about .about-right{
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        padding: 0 3rem;
+    }
+    .about .about-right h2{
+        display: inline-block;
+    }
 }
