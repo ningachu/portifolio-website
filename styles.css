@@ -140,6 +140,39 @@ body{
     font-weight: 250;
     font-size: 1.2rem;
 }
+.projects{
+    max-width: min(100%, 1200px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    gap: 2rem;
+    min-height: 100dvh;
+}
+.projects-cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 1rem 4rem;
+}
+.projects-cards .card1{
+    min-width: 20rem;
+    min-height: 25rem;
+    border-radius: 20px;
+    padding-top: 8rem;
+    padding-left:4rem ;
+    color: white;
+    font-size: 1.2rem;
+    background-color: rgb(26, 26, 26);
+    box-shadow:0 2px 12px rgb(102, 102, 102) ;
+}
+.projects-cards .card1 i{
+    margin: 4rem;
+}
+
+
+
+
 
 
 
@@ -223,17 +256,17 @@ body{
     }
     html,
     body{
-        overflow-x: hidden;
+        overflow-x:clip;
     }
     .container
     {
         width: 100%;
-        max-width: 100dvw;
+        max-width: 100vw;
     }
     
     .navigation{
         margin: 0;
-        width: 100%;
+        max-width: 100%;
         padding: 1rem;
         display: flex;
         flex-direction: column;
@@ -263,7 +296,7 @@ body{
         font-size: 2rem;
     }
     .home img{
-        width: 80vw;
+        width: 70vw;
         max-width: none;
     }
     .home .div-home .button{
@@ -293,4 +326,25 @@ body{
     .about .about-right h2{
         font-size: 1.5rem;
     }
+    .projects,
+    .projects-cards{
+        width: 100%;
+        max-width: 100%;
+    }
+    .projects{
+        max-width: 100%;
+    }
+    .projects .projects-cards{
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+        width: fit-content;
+    }
+    .projects .projects-cards .card1{
+        font-size: 1.6rem;
+    }
+    .projects .h2 h1{
+        font-size: 2.4rem;
+    }
+
 }
