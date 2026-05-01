@@ -71,3 +71,15 @@ body{
 .contacts-links-btns a button:hover{
     transform: scale(1.05);
 }
+
+@media screen and (max-width : 365px){
+    .container-contacts{
+        gap: 1rem;
+    }
+}
+
+@media screen and (min-width: 365px){
+    .container-contacts{
+        gap: 1rem;
+    }
+}
